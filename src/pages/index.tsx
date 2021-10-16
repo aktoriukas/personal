@@ -2,8 +2,10 @@ import React, { lazy, Suspense } from "react"
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Loading from "../components/Loading"
-const About = lazy(() => import('../components/About'));
-const ProjectContainer = lazy(() => import('../components/ProjectContainer'));
+// const About = lazy(() => import('../components/About'));
+import About from "../components/About";
+// const ProjectContainer = lazy(() => import('../components/ProjectContainer'));
+import ProjectContainer from "../components/ProjectContainer";
 import { Helmet } from "react-helmet";
 import icon from '../images/icon.png'
 
@@ -20,21 +22,17 @@ const IndexPage = () => {
     
       <main className="w-full">
 
-        <Suspense fallback={<Loading />}>
+        <About />
 
-          <About />
+        <div className="md:w-3/5 ml-auto ">
 
-          <div className="md:w-3/5 ml-auto ">
+            <ProjectContainer /> 
 
-            <ProjectContainer />
+          <Carousel />
 
-            <Carousel />
+          <Footer />
 
-            <Footer />
-
-          </div>
-
-        </Suspense>
+        </div>
 
       </main>
     </>

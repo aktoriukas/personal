@@ -12,7 +12,7 @@ export interface projectType {
     dark: boolean
 }
 
-const projects:projectType[] = [
+export const projects:projectType[] = [
     {
         nr: '01',
         title: "Policy Expert",
@@ -53,5 +53,3 @@ const projects:projectType[] = [
         dark: true
     }
 ];
-
-export default projects
