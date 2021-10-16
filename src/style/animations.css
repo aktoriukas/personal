@@ -1,0 +1,110 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 24px;
+}
+.mosaic-loader {
+  --cell-size: 40px;
+  --cell-spacing: 1px;
+  --border-width: 1px;
+  --cells: 4;
+  --total-size: calc(
+    var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing))
+  );
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--total-size);
+  height: var(--total-size);
+}
+.mosaic-loader > .cell {
+  --cell-color: white;
+  flex: 0 0 var(--cell-size);
+  margin: var(--cell-spacing);
+  background-color: transparent;
+  box-sizing: border-box;
+  border: var(--border-width) solid white;
+  animation: 1.5s ripple ease infinite;
+}
+.mosaic-loader > .cell.d-1 {
+  animation-delay: 100ms;
+}
+.mosaic-loader > .cell.d-2 {
+  animation-delay: 200ms;
+}
+.mosaic-loader > .cell.d-3 {
+  animation-delay: 300ms;
+}
+.mosaic-loader > .cell.d-4 {
+  animation-delay: 400ms;
+}
+.mosaic-loader > .cell.d-5 {
+  animation-delay: 500ms;
+}
+.mosaic-loader > .cell.d-6 {
+  animation-delay: 600ms;
+}
+.mosaic-loader > .cell {
+  --cell-color: #383838b4;
+}
+@keyframes ripple {
+  0% {
+    background-color: transparent;
+  }
+  30% {
+    background-color: var(--cell-color);
+  }
+  60% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.social-media i:hover {
+  font-size: 3.5rem;
+}
+.social-media i {
+  transition: all 0.5s ease;
+  font-size: 2rem;
+}
+
+/* SLIDER */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50px * 32));
+  }
+}
+.slider {
+  height: 50px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider i {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  margin: auto;
+}
+.slider .slide-track {
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: calc(50px * 64);
+}
+.slider .slide {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
