@@ -68,10 +68,12 @@
 }
 .social-media i:hover {
   font-size: 3.5rem;
+  line-height: 0.35;
 }
 .social-media i {
-  transition: all 0.5s ease;
+  transition: all 0.5s linear;
   font-size: 2rem;
+  line-height: 0.35;
 }
 
 /* SLIDER */
@@ -108,3 +110,5 @@
   width: 50px;
   text-align: center;
 }
+
+/* Keyboard */

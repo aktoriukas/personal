@@ -20,32 +20,38 @@ export default function ImageComponent({ imageName }:Props) {
         query headerImages {
             investMobile: imageSharp(fluid: { originalName: { eq: "invest-mobile.png" } }) {
                 gatsbyImageData(
-                quality: 70
+                    quality: 90
+                    placeholder: BLURRED
                 )
             }
             investDesktop: imageSharp(fluid: { originalName: { eq: "invest-desktop.png" } }) {
                 gatsbyImageData(
-                quality: 70
+                    quality: 90
+                    placeholder: BLURRED
                 )
             }
             policyMobile: imageSharp(fluid: { originalName: { eq: "policyexperts-mobile.png" } }) {
                 gatsbyImageData(
-                quality: 70
+                    quality: 90
+                    placeholder: BLURRED
                 )
             }
             policyDesktop: imageSharp(fluid: { originalName: { eq: "policyexperts-desktop.png" } }) {
                 gatsbyImageData(
-                quality: 70
+                    quality: 90
+                    placeholder: BLURRED
                 )
             }
             revitiMobile: imageSharp(fluid: { originalName: { eq: "reviti-mobile.png" } }) {
                 gatsbyImageData(
-                quality: 70
+                    quality: 90
+                    placeholder: BLURRED
                 )
             }
             revitiDesktop: imageSharp(fluid: { originalName: { eq: "reviti-desktop.png" } }) {
                 gatsbyImageData(
-                quality: 70
+                    quality: 90
+                    placeholder: BLURRED
                 )
             }
         }

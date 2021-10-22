@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import "./src/style/index.css";
+
+@layer base {
+  .about-project .stack span:after {
+    content: "|";
+    @apply pl-2;
+  }
+  .about-project .stack span:last-child:after {
+    content: "";
+  }
+}

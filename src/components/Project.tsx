@@ -25,7 +25,8 @@ export default function Project({ project }:Props) {
             </div>
 
             <div className="about-project px-8 pb-10 md:px-24 md:pb-32">
-                <h2 className={`text-3xl ${dark ? 'text-offwhite' : ''}`}>{title}</h2>
+
+                <h2 className={`text-4xl md:text-5xl pb-2 ${dark ? 'text-offwhite' : ''}`}>{title}</h2>
 
                 <div className="stack flex flex-wrap">
                     {stack.map(item => (
@@ -36,7 +37,6 @@ export default function Project({ project }:Props) {
                 </div>
 
             </div>
-
 
         </div>
     )
