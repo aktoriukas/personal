@@ -1,13 +1,10 @@
-import React, { lazy, Suspense } from "react"
+import React from "react"
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
-import Loading from "../components/Loading"
-// const About = lazy(() => import('../components/About'));
 import About from "../components/About";
-// const ProjectContainer = lazy(() => import('../components/ProjectContainer'));
 import ProjectContainer from "../components/ProjectContainer";
 import { Helmet } from "react-helmet";
-import icon from '../images/icon.png'
+// import icon from '../images/icon.png'
 
 // markup
 const IndexPage = () => {
@@ -17,7 +14,7 @@ const IndexPage = () => {
       <Helmet>
         <title>My Awesome Website</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet"></link>
-        <link href={icon} rel="shortcut icon" type="image/x-icon"></link>
+        {/* <link href={icon} rel="shortcut icon" type="image/x-icon"></link> */}
       </Helmet>
     
       <main className="w-full">

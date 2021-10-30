@@ -10,6 +10,7 @@ export interface projectType {
     },
     stack: string[]
     dark: boolean
+    link: string
 }
 
 export const projects:projectType[] = [
@@ -24,7 +25,8 @@ export const projects:projectType[] = [
         stack:[
             'typescript', 'tailwind', 'npm', 'gatsby'
         ],
-        dark: true
+        dark: true,
+        link: "https://www.policyexpert.co.uk/"
     },
     {
         nr: '02',
@@ -37,7 +39,8 @@ export const projects:projectType[] = [
         stack:[
             'typescript', 'tailwind', 'npm', 'gatsby', 'express', 'azure', 'axios', 'mongoDb'
         ],
-        dark: false
+        dark: false,
+        link: "https://revitilife.com/"
     },
     {
         nr: '03',
@@ -50,6 +53,7 @@ export const projects:projectType[] = [
         stack:[
             'sass', 'php'
         ],
-        dark: true
+        dark: true,
+        link: "https://investmentguide.africa/"
     }
 ];
