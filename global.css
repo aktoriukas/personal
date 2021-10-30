@@ -21,4 +21,28 @@
   .web-icon:hover {
     transform: scale(1.1);
   }
+  .hexagon polygon {
+    stroke-width: 2 !important;
+  }
+  .card-stripe .triangle-bottom {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid black;
+  }
+  .card-stripe .triangle-top {
+    position: absolute;
+    right: -50px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid black;
+  }
 }

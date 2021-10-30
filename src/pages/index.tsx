@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import About from "../components/About";
 import ProjectContainer from "../components/ProjectContainer";
 import { Helmet } from "react-helmet";
+import OtherProjects from "../components/OtherProjects";
 // import icon from '../images/icon.png'
 
 // markup
@@ -23,7 +24,9 @@ const IndexPage = () => {
 
         <div className="md:w-3/5 ml-auto ">
 
-            <ProjectContainer /> 
+          <ProjectContainer /> 
+
+          <OtherProjects />
 
           <Carousel />
 

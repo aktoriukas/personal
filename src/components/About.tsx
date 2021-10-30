@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div className="relative md:fixed px-8 py-10 md:w-2/5 md:px-24 md:py-32 h-screen bg-offwhite">
+        <div className="relative md:fixed px-8 py-10 md:w-2/5 md:px-24 md:py-32 h-screen bg-offwhite z-50">
 
 
             <div className="h-full flex flex-col justify-end pb-36 md:pb-16 about-content">

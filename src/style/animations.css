@@ -120,6 +120,10 @@
   animation: slide-left 1s ease-in-out;
   position: relative;
 }
+.slide-right {
+  animation: slide-right 1s ease-in-out;
+  position: relative;
+}
 
 @keyframes slide-left {
   0% {
@@ -168,3 +172,5 @@
   width: 50px;
   text-align: center;
 }
+
+/* HEXAGON */

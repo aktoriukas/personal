@@ -31,29 +31,68 @@ export const projects:projectType[] = [
     {
         nr: '02',
         title: "Reviti",
-        bgColor: '#AEFFD8',
+        bgColor: '#258351',
         image: {
             mobile: "revitiMobile",
             desktop: "revitiDesktop"
         },
         stack:[
-            'typescript', 'tailwind', 'npm', 'gatsby', 'express', 'azure', 'axios', 'mongoDb'
+            'typescript', 'tailwind', 'npm', 'gatsby', 'express', 'azure', 'axios', 'mongoDb', 'azure'
         ],
-        dark: false,
+        dark: true,
         link: "https://revitilife.com/"
     },
     {
         nr: '03',
         title: "Invest Guide Africa",
-        bgColor: '#1B9AAA',
+        bgColor: '#2F97C1',
         image: {
             mobile: "investMobile",
             desktop: "investDesktop"
         },
         stack:[
-            'sass', 'php'
+            'sass', 'php', 'git'
         ],
         dark: true,
-        link: "https://investmentguide.africa/"
+        link: "https://investmentguide.africa"
     }
 ];
+
+export interface supportProjectsType {
+    nr: string;
+    title: string;
+    color: string
+    link: string;
+    dark: boolean
+}
+
+export const supportProjects:supportProjectsType[] = [
+    {
+        nr: '001',
+        title: "Islamic Development Bank",
+        color: '#EAF8E8',
+        link: 'https://www.isdb.org/',
+        dark: false
+    },
+    {
+        nr: '002',
+        title: "On The Edge",
+        color: '#508330',
+        link: 'https://www.ontheedge.org',
+        dark: true
+    },
+    {
+        nr: '003',
+        title: "Wirebox",
+        color: '#092948',
+        link: 'https://www.wirebox.co.uk',
+        dark: true
+    },
+    {
+        nr: '004',
+        title: "Good Caesar",
+        color: '#D4B000',
+        link: 'https://www.goodcaesar.com',
+        dark: false
+    }
+]
