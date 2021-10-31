@@ -1,4 +1,5 @@
 import { imageType } from "../components/Image";
+import digitalLabs from '../images/digital-labs.png'
 
 export interface projectType {
     nr: string;
@@ -64,23 +65,24 @@ export interface supportProjectsType {
     color: string
     link: string;
     dark: boolean
+    img ?: any,
 }
 
 export const supportProjects:supportProjectsType[] = [
-    {
-        nr: '001',
-        title: "Islamic Development Bank",
-        color: '#EAF8E8',
-        link: 'https://www.isdb.org/',
-        dark: false
-    },
-    {
-        nr: '002',
-        title: "On The Edge",
-        color: '#508330',
-        link: 'https://www.ontheedge.org',
-        dark: true
-    },
+    // {
+    //     nr: '001',
+    //     title: "Islamic Development Bank",
+    //     color: '#EAF8E8',
+    //     link: 'https://www.isdb.org/',
+    //     dark: false
+    // },
+    // {
+    //     nr: '002',
+    //     title: "On The Edge",
+    //     color: '#508330',
+    //     link: 'https://www.ontheedge.org',
+    //     dark: true
+    // },
     {
         nr: '003',
         title: "Wirebox",
@@ -93,6 +95,14 @@ export const supportProjects:supportProjectsType[] = [
         title: "Good Caesar",
         color: '#D4B000',
         link: 'https://www.goodcaesar.com',
-        dark: false
+        dark: false,
+    },
+    {
+        nr: '005',
+        title: "Digital Labs",
+        color: '#030303',
+        link: 'https://www.digitallabs.co.uk',
+        dark: true,
+        img: digitalLabs
     }
 ]
