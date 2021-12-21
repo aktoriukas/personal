@@ -11,13 +11,27 @@ export type imageType =
     'policyMobile' |
     'policyDesktop' |
     'revitiMobile' |
-    'revitiDesktop'
+    'revitiDesktop' |
+    'cremationDesktop' |
+    'cremationMobile';
 
 export default function ImageComponent({ imageName }:Props) {
 
     const headerImages = useStaticQuery(graphql`
 
         query headerImages {
+            cremationMobile: imageSharp(fluid: { originalName: { eq: "cremation-mobile.png" } }) {
+                gatsbyImageData(
+                    quality: 90
+                    placeholder: BLURRED
+                )
+            }
+            cremationDesktop: imageSharp(fluid: { originalName: { eq: "cremation-desktop.png" } }) {
+                gatsbyImageData(
+                    quality: 90
+                    placeholder: BLURRED
+                )
+            }
             investMobile: imageSharp(fluid: { originalName: { eq: "invest-mobile.png" } }) {
                 gatsbyImageData(
                     quality: 90

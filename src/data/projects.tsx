@@ -17,6 +17,20 @@ export interface projectType {
 export const projects:projectType[] = [
     {
         nr: '01',
+        title: "Pure Cremation",
+        bgColor: '#702D90',
+        image: {
+            mobile: "cremationMobile",
+            desktop: "cremationDesktop"
+        },
+        stack:[
+            'jQuery', 'bootstrap', 'laravel', 'mysql'
+        ],
+        dark: true,
+        link: ""
+    },
+    {
+        nr: '02',
         title: "Policy Expert",
         bgColor: '#AA4465',
         image: {
@@ -24,13 +38,13 @@ export const projects:projectType[] = [
             desktop: "policyDesktop"
         },
         stack:[
-            'typescript', 'tailwind', 'npm', 'gatsby'
+            'react', 'gatsby', 'typescript', 'tailwind' 
         ],
         dark: true,
         link: "https://www.policyexpert.co.uk/"
     },
     {
-        nr: '02',
+        nr: '03',
         title: "Reviti",
         bgColor: '#258351',
         image: {
@@ -38,13 +52,13 @@ export const projects:projectType[] = [
             desktop: "revitiDesktop"
         },
         stack:[
-            'typescript', 'tailwind', 'npm', 'gatsby', 'express', 'azure', 'axios', 'mongoDb', 'azure'
+            'react','gatsby', 'typescript', 'tailwind',  'azure', 'mongoDb', 'rest API'
         ],
         dark: true,
         link: "https://revitilife.com/"
     },
     {
-        nr: '03',
+        nr: '04',
         title: "Invest Guide Africa",
         bgColor: '#2F97C1',
         image: {
@@ -52,7 +66,7 @@ export const projects:projectType[] = [
             desktop: "investDesktop"
         },
         stack:[
-            'sass', 'php', 'git'
+            'drupal', 'sass'
         ],
         dark: true,
         link: "https://investmentguide.africa"
