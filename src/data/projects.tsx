@@ -115,7 +115,7 @@ export const supportProjects:supportProjectsType[] = [
         nr: '005',
         title: "Digital Labs",
         color: '#030303',
-        link: 'https://www.digitallabs.co.uk',
+        link: 'https://www.digital-labs.co.uk',
         dark: true,
         img: digitalLabs
     }
