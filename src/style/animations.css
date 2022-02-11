@@ -14,9 +14,7 @@
   --cell-spacing: 1px;
   --border-width: 1px;
   --cells: 4;
-  --total-size: calc(
-    var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing))
-  );
+  --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
   display: flex;
   flex-wrap: wrap;
   width: var(--total-size);
@@ -123,6 +121,22 @@
 .slide-right {
   animation: slide-right 1s ease-in-out;
   position: relative;
+}
+.pop-up {
+  animation: pop-up 1s ease-in-out;
+  position: relative;
+}
+@keyframes pop-up {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    bottom: 0px;
+  }
 }
 
 @keyframes slide-left {
