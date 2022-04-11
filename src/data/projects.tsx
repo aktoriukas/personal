@@ -43,7 +43,7 @@ export const projects: projectType[] = [
       mobile: "cremationMobile",
       desktop: "cremationDesktop",
     },
-    stack: ["jQuery", "bootstrap", "laravel", "mysql"],
+    stack: ["Gatsby", "React", "Tailwind", "Drupal"],
     dark: true,
     link: null,
   },
