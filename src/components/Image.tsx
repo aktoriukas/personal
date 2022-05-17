@@ -16,6 +16,8 @@ export type imageType =
   | "cremationMobile"
   | "hashyMobile"
   | "hashyDesktop"
+  | "alexDesktop"
+  | "alexMobile"
 
 export default function ImageComponent({ imageName }: Props) {
   const headerImages = useStaticQuery(graphql`
@@ -50,14 +52,14 @@ export default function ImageComponent({ imageName }: Props) {
       revitiDesktop: imageSharp(fluid: { originalName: { eq: "reviti-desktop.png" } }) {
         gatsbyImageData(quality: 90, placeholder: BLURRED)
       }
+      alexDesktop: imageSharp(fluid: { originalName: { eq: "alex-desktop.png" } }) {
+        gatsbyImageData(quality: 90, placeholder: BLURRED)
+      }
+      alexMobile: imageSharp(fluid: { originalName: { eq: "alex-mobile.png" } }) {
+        gatsbyImageData(quality: 90, placeholder: BLURRED)
+      }
     }
   `)
 
-  return (
-    <GatsbyImage
-      image={headerImages[imageName].gatsbyImageData}
-      alt="Gatsby Docs are awesome"
-      className="m-auto"
-    />
-  )
+  return <GatsbyImage image={headerImages[imageName].gatsbyImageData} alt="Gatsby Docs are awesome" className="m-auto" />
 }

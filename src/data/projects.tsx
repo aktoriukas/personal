@@ -21,22 +21,37 @@ type linkType = {
 
 export const projects: projectType[] = [
   {
-    nr: "01",
-    title: "Hashy",
-    bgColor: "#221E22",
+    nr: "06",
+    title: "Alex the alkimist",
+    bgColor: "#040A1A",
     image: {
-      mobile: "hashyMobile",
-      desktop: "hashyDesktop",
+      mobile: "alexMobile",
+      desktop: "alexDesktop",
     },
-    stack: ["gatsby", "typescript", "react", "tailwind"],
+    stack: ["React", "Solidity", "ethers"],
     dark: true,
     link: {
-      title: "hash.aktoriukas.com",
-      link: "https://hash.aktoriukas.com/",
+      title: "alexthealkimist.com",
+      link: "https://www.alexthealkimist.com/",
     },
   },
+  // {
+  //   nr: "05",
+  //   title: "Hashy",
+  //   bgColor: "#221E22",
+  //   image: {
+  //     mobile: "hashyMobile",
+  //     desktop: "hashyDesktop",
+  //   },
+  //   stack: ["gatsby", "typescript", "react", "tailwind"],
+  //   dark: true,
+  //   link: {
+  //     title: "hash.aktoriukas.com",
+  //     link: "https://hash.aktoriukas.com/",
+  //   },
+  // },
   {
-    nr: "02",
+    nr: "04",
     title: "Pure Cremation",
     bgColor: "#702D90",
     image: {
@@ -63,7 +78,7 @@ export const projects: projectType[] = [
     },
   },
   {
-    nr: "04",
+    nr: "02",
     title: "Reviti",
     bgColor: "#258351",
     image: {
@@ -75,7 +90,7 @@ export const projects: projectType[] = [
     link: null,
   },
   {
-    nr: "05",
+    nr: "01",
     title: "Invest Guide Africa",
     bgColor: "#2F97C1",
     image: {
