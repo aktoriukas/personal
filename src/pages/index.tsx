@@ -21,7 +21,7 @@ const IndexPage = () => {
         {/* <link href={icon} rel="shortcut icon" type="image/x-icon"></link> */}
       </Helmet>
 
-      <main className="w-full">
+      <main className="w-full ">
         <About />
 
         <div className="md:w-3/5 ml-auto ">
