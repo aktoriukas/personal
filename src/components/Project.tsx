@@ -1,7 +1,6 @@
 import React from "react"
 import { projectType } from "../data/projects"
 import ImageComponent from "./Image"
-import { isMobile } from "react-device-detect"
 
 interface Props {
   project: projectType

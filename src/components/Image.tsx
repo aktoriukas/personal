@@ -18,6 +18,8 @@ export type imageType =
   | "hashyDesktop"
   | "alexDesktop"
   | "alexMobile"
+  | "alkimiDesktop"
+  | "alkimi"
 
 export default function ImageComponent({ imageName }: Props) {
   const headerImages = useStaticQuery(graphql`
@@ -56,6 +58,12 @@ export default function ImageComponent({ imageName }: Props) {
         gatsbyImageData(quality: 90, placeholder: BLURRED)
       }
       alexMobile: imageSharp(fluid: { originalName: { eq: "alex-mobile.png" } }) {
+        gatsbyImageData(quality: 90, placeholder: BLURRED)
+      }
+      alkimiDesktop: imageSharp(fluid: { originalName: { eq: "alkimi-desktop.png" } }) {
+        gatsbyImageData(quality: 90, placeholder: BLURRED)
+      }
+      alkimi: imageSharp(fluid: { originalName: { eq: "alkimi.png" } }) {
         gatsbyImageData(quality: 90, placeholder: BLURRED)
       }
     }

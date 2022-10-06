@@ -21,20 +21,35 @@ type linkType = {
 
 export const projects: projectType[] = [
   {
-    nr: "06",
-    title: "Alex the alkimist",
-    bgColor: "#040A1A",
+    nr: "07",
+    title: "Alkimi Labs",
+    bgColor: "#5E2FFA",
     image: {
-      mobile: "alexMobile",
-      desktop: "alexDesktop",
+      mobile: "alkimi",
+      desktop: "alkimiDesktop",
     },
-    stack: ["React", "Solidity", "ethers"],
+    stack: ["next.js", "scss", "ethers", "mongodb", "node.js", "rest api", "web3"],
     dark: true,
     link: {
-      title: "alexthealkimist.com",
-      link: "https://www.alexthealkimist.com/",
+      title: "labs.alkimi.org",
+      link: "https://labs.alkimi.org/",
     },
   },
+  // {
+  //   nr: "06",
+  //   title: "Alex the alkimist",
+  //   bgColor: "#040A1A",
+  //   image: {
+  //     mobile: "alexMobile",
+  //     desktop: "alexDesktop",
+  //   },
+  //   stack: ["React", "Solidity", "ethers"],
+  //   dark: true,
+  //   link: {
+  //     title: "alexthealkimist.com",
+  //     link: "https://www.alexthealkimist.com/",
+  //   },
+  // },
   // {
   //   nr: "05",
   //   title: "Hashy",
@@ -58,7 +73,7 @@ export const projects: projectType[] = [
       mobile: "cremationMobile",
       desktop: "cremationDesktop",
     },
-    stack: ["Gatsby", "React", "Tailwind", "Drupal"],
+    stack: ["gatsby", "tailwind", "drupal"],
     dark: true,
     link: null,
   },
@@ -85,7 +100,7 @@ export const projects: projectType[] = [
       mobile: "revitiMobile",
       desktop: "revitiDesktop",
     },
-    stack: ["react", "gatsby", "typescript", "tailwind", "azure", "mongoDb", "rest API"],
+    stack: ["gatsby", "typescript", "tailwind", "azure", "mongodb", "rest api"],
     dark: true,
     link: null,
   },
